@@ -1,14 +1,16 @@
 # 📈 Finnhub Live Market Tracker
 
+**Author:** Krishna Savaliya  
+**Tech Stack:** Python · PostgreSQL · Power BI
+
+## 📌 Project Overview
 An end-to-end Data Engineering and Business Intelligence pipeline that ingests real-time stock market quotes every 10 seconds using Python, stores them in a dual-table PostgreSQL database, and visualizes live KPIs and intraday price trends in Power BI.
+
+Static market exports make it difficult to monitor rapid intraday swings across multiple equities simultaneously. This automated pipeline solves that problem by streaming live market data for **7 major tech stocks** (`AAPL`, `MSFT`, `NVDA`, `AMZN`, `TSLA`, `GOOGL`, `META`) from the Finnhub REST API directly into a local PostgreSQL warehouse, eliminating manual CSV exports.
 
 ![Dashboard Preview](https://github.com/krishna043-prog/Finnhub-Live-Market-Tracker/blob/main/finnhub_live_dashboad/finnhub_live_dashboard_screenshot.png)
 
 ---
-
-## 📌 Overview
-
-Static market exports make it difficult to monitor rapid intraday swings across multiple equities simultaneously. This automated pipeline solves that problem by streaming live market data for **7 major tech stocks** (`AAPL`, `MSFT`, `NVDA`, `AMZN`, `TSLA`, `GOOGL`, `META`) from the Finnhub REST API directly into a local PostgreSQL warehouse, eliminating manual CSV exports.
 
 ## ⚙️ Architecture & Workflow
 
@@ -70,5 +72,3 @@ Static market exports make it difficult to monitor rapid intraday swings across 
 
 ---
 
-
-**Built by Krishna Savaliya**
